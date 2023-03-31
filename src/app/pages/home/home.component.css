@@ -1,0 +1,43 @@
+.columna1 {
+    background-color: #154565;
+}
+
+.columna2 {
+    background-color: #3396FF;
+    height: 70px;
+    /* width: 800px; */
+    /* box-sizing: border-box; */
+}
+
+.columna3 {
+    background-color: #166C40;
+    height: 878px
+}
+
+.columna4{
+    background-color: #C5EADB;
+}
+
+.asea-img {
+    /* display: block; */
+    width: 8rem;
+    height: 3.5rem;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 8px;
+}
+
+.columna1{
+    display: flex;
+    justify-content: center;
+}
+
+.radio-flex {
+    display: flex;
+    justify-content: end;
+}
+
+.btn-centrar{
+    display: flex;
+    justify-content: space-evenly;
+}

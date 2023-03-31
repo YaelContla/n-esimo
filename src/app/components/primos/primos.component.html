@@ -1,0 +1,23 @@
+<div class="form-group">
+    <label class="fw-bolder mb-2">Encuentra el número primo según su posición</label>
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Posición del número primo"
+      [(ngModel)]="inputA"
+      name="inputA"
+    />
+    <!-- I used ngModel == Two Way Binding for take the values  -->
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button
+        type="submit"
+        class="btn btn-primary mt-3"
+        (click)="numPrimos(inputA)"
+        >
+        Primo
+      </button>
+      <!-- I used (click) = Event Binding -->
+    </div>

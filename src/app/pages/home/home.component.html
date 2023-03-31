@@ -1,0 +1,53 @@
+<div class="row row-cols-2">
+    <div class="col-sm-2 columna1">
+    </div>
+  
+    <div class="col-sm-10 columna2">
+  
+      <h1 class="py-2 text-center">{{ title }}</h1>
+    </div>
+  
+    <div class="col-sm-2 columna3"></div>
+  
+    <div class="col-sm-10 container columna4">
+      <div class="pt-5 px-5">
+        <div class="container">
+  
+          <p class="mb-5 text-center fs-3">
+            Esta aplicación es para poder encontrar un
+            <span class="text-success fw-bold">"número primo"</span> o un
+            <span class="text-success fw-bold">"múltiplo de 3"</span> dependiendo
+            de su posición
+          </p>
+  
+          <div class="row">
+            <div class="col">
+              <form>
+                <div class="row">
+                  <div class="col">
+                   
+                  <app-primos (valorSalida)="cambioValorHijo($event)" [inputA]="1" ></app-primos>
+                    
+                  </div>
+  
+                  <div class="col">
+                   
+                    <app-multiplo-tres (valorSalida)="cambioValorHijo($event)" [inputB]="1"></app-multiplo-tres>
+
+                  </div>
+                </div>
+  
+               
+              </form>
+              <!--Form closed-->
+  
+              <div class="col text-center mt-5">
+                <p class="fw-bold">Tu número es: <span class="text-success">{{ resultado }}</span></p>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

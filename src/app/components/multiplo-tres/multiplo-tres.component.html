@@ -1,0 +1,24 @@
+<div class="form-group">
+    <label class="fw-bolder mb-2">Encuentra el múltiplo de 3 según su posición</label>
+    <input
+      type="number"
+      class="form-control"
+      placeholder="Posición del multipli de 3"
+      [(ngModel)]="inputB"
+      name="inputB"
+      />
+    <!-- I used ngModel = Two Way Binding for take the values  -->
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <button
+        type="submit"
+        class="btn btn-primary mt-3"
+        (click)="multiTres(inputB)"
+        >
+        Multiplo de 3
+      </button>
+      <!-- I used (click) = Event Binding -->
+    </div>
+  </div>
